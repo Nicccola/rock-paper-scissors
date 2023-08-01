@@ -1,0 +1,251 @@
+@font-face {
+    font-family: Digital;
+    src: url(/Users/nicolabeattie/Projects/rock-paper-scissors/fonts/digital-7/digital-7.ttf);
+}
+
+@font-face {
+    font-family: Righteous;
+    src: url(/Users/nicolabeattie/Projects/rock-paper-scissors/fonts/Righteous/Righteous-Regular.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(to right top, #83eacd, #71e7f0, #87e0ff, #b1d6ff, #d7ccfc, #ecc7ee, #fac5de, #ffc5cd, #ffcabc, #ffd5a5, #ffe78e, #fffe85);
+    background-size: cover;
+    height: 100vh; 
+}
+
+
+
+.scoreboard {
+    width: 24rem;
+    height: 12rem;
+    background-color: #fffaff;
+    color: #461CF1;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem; 
+    font-family: 'Digital';
+    border: 4px solid #374853;
+    
+}
+
+
+.dots {
+    display: flex; 
+    flex-direction: column;
+    height: 6rem;
+    align-items: center;
+    gap: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+
+.dot {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #461CF1;
+}
+
+
+.badges {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 1rem;
+}
+
+
+
+.badge {
+    width: 6rem;
+    height: 6.5rem; 
+    background-color: rgb(199, 78, 206, .5);
+    border-radius: 5px;
+    border: 2px solid rgb(224, 116, 230, .6);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    font-size: 4rem;
+
+}
+
+
+.names {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    margin: .3rem 0; 
+    font-size: 1.7rem;
+}
+
+
+#user-label {
+    padding-right: 12rem;
+    position: absolute;
+    color: #0ED3AE;
+}
+
+
+#comp-label {
+    padding-left: 12rem;
+    position: absolute;
+    color: #F6440F;
+}
+
+
+.line {
+    width: 2.9rem;
+    height: 4px;
+    background-color:#374853;
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+
+hr {
+    background-color: #374853;
+    height: 3px; 
+    border: none;
+}
+
+
+.choices {
+    display: flex; 
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 3rem;
+}
+
+
+.choice {
+    width: 13.5rem;
+    height: 13.5rem;
+    background-color: #fffaff;
+    border-radius: 50%;
+    border: 5px solid #374853; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.choice:hover {
+    box-shadow: 5px 5px 11px #6F54FF;
+}
+
+
+.user-choice {
+    border: 8px solid #86E9D6;
+    box-shadow: 7px 5px 11px #508b80;
+}
+
+
+.comp-choice {
+    border: 8px solid #F6440F;
+    box-shadow: 7px 5px 11px #8e2a24;
+}
+
+
+.tie {
+    border: 8px solid #461CF1;
+    box-shadow: 5px 5px 11px #6F54FF;
+}
+
+
+img {
+    width: 8rem;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img-bg {
+    background-color: #fffaff;
+    width: 11.4rem;
+    height: 11.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+.rock {
+    scale: 90%; 
+}
+
+
+.paper {
+    padding-left: 1rem;
+}
+
+
+.scissors {
+    scale: 75%;
+}
+
+
+.results {
+    display: flex;
+    justify-content: center;
+    font-family: 'Righteous';
+    font-size: 2rem;
+    text-align: center;
+    color: #461CF1;
+    background-color: #fffaff;
+    width: 45%;
+    margin: 4rem auto 4rem auto;
+    border-radius: 5px;
+    border: 3px solid #374853;
+    padding: .5rem 0;
+
+}
+
+
+
+.win-color {
+    display: flex;
+    justify-content: center;
+    font-family: 'Righteous';
+    font-weight: 200;
+    font-size: 2rem;
+    color: #78d1c0;
+    background-color: #fffaff;
+    width: 45%;
+    margin: 4rem auto 4rem auto;
+    border-radius: 5px;
+    border: 3px solid #78D1C0;
+    padding: .5rem 0;
+    
+    
+}
+
+
+.lose-color {
+    display: flex;
+    justify-content: center;
+    font-family: 'Righteous';
+    font-size: 2rem;
+    color: #F6440F;
+    background-color: #fffaff;
+    width: 45%;
+    margin: 4rem auto 4rem auto;
+    border-radius: 5px;
+    border: 3px solid #F6440F;
+    padding: .5rem 0;
+}
